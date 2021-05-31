@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BA8F9782664CF7200FB4009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9772664CF7200FB4009 /* AppDelegate.swift */; };
+		1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */; };
+		1BA8F97C2664CF7200FB4009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F97B2664CF7200FB4009 /* ViewController.swift */; };
+		1BA8F97F2664CF7200FB4009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F97D2664CF7200FB4009 /* Main.storyboard */; };
+		1BA8F9812664CF7400FB4009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9802664CF7400FB4009 /* Assets.xcassets */; };
+		1BA8F9842664CF7400FB4009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9822664CF7400FB4009 /* LaunchScreen.storyboard */; };
+		1BA8F98F2664CF7400FB4009 /* BakingChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F98E2664CF7400FB4009 /* BakingChatTests.swift */; };
+		1BA8F99A2664CF7400FB4009 /* BakingChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9992664CF7400FB4009 /* BakingChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BA8F98B2664CF7400FB4009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA8F96C2664CF7100FB4009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA8F9732664CF7200FB4009;
+			remoteInfo = BakingChat;
+		};
+		1BA8F9962664CF7400FB4009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BA8F96C2664CF7100FB4009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BA8F9732664CF7200FB4009;
+			remoteInfo = BakingChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BA8F9742664CF7200FB4009 /* BakingChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakingChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA8F9772664CF7200FB4009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1BA8F97B2664CF7200FB4009 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BA8F97E2664CF7200FB4009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BA8F9802664CF7400FB4009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BA8F9832664CF7400FB4009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BA8F9852664CF7400FB4009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA8F98A2664CF7400FB4009 /* BakingChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakingChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA8F98E2664CF7400FB4009 /* BakingChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingChatTests.swift; sourceTree = "<group>"; };
+		1BA8F9902664CF7400FB4009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA8F9952664CF7400FB4009 /* BakingChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakingChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA8F9992664CF7400FB4009 /* BakingChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingChatUITests.swift; sourceTree = "<group>"; };
+		1BA8F99B2664CF7400FB4009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA8F9712664CF7200FB4009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9872664CF7400FB4009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9922664CF7400FB4009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BA8F96B2664CF7100FB4009 = {
+			isa = PBXGroup;
+			children = (
+				1BA8F9762664CF7200FB4009 /* BakingChat */,
+				1BA8F98D2664CF7400FB4009 /* BakingChatTests */,
+				1BA8F9982664CF7400FB4009 /* BakingChatUITests */,
+				1BA8F9752664CF7200FB4009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BA8F9752664CF7200FB4009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BA8F9742664CF7200FB4009 /* BakingChat.app */,
+				1BA8F98A2664CF7400FB4009 /* BakingChatTests.xctest */,
+				1BA8F9952664CF7400FB4009 /* BakingChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BA8F9762664CF7200FB4009 /* BakingChat */ = {
+			isa = PBXGroup;
+			children = (
+				1BA8F9772664CF7200FB4009 /* AppDelegate.swift */,
+				1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */,
+				1BA8F97B2664CF7200FB4009 /* ViewController.swift */,
+				1BA8F97D2664CF7200FB4009 /* Main.storyboard */,
+				1BA8F9802664CF7400FB4009 /* Assets.xcassets */,
+				1BA8F9822664CF7400FB4009 /* LaunchScreen.storyboard */,
+				1BA8F9852664CF7400FB4009 /* Info.plist */,
+			);
+			path = BakingChat;
+			sourceTree = "<group>";
+		};
+		1BA8F98D2664CF7400FB4009 /* BakingChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA8F98E2664CF7400FB4009 /* BakingChatTests.swift */,
+				1BA8F9902664CF7400FB4009 /* Info.plist */,
+			);
+			path = BakingChatTests;
+			sourceTree = "<group>";
+		};
+		1BA8F9982664CF7400FB4009 /* BakingChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BA8F9992664CF7400FB4009 /* BakingChatUITests.swift */,
+				1BA8F99B2664CF7400FB4009 /* Info.plist */,
+			);
+			path = BakingChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BA8F9732664CF7200FB4009 /* BakingChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA8F99E2664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChat" */;
+			buildPhases = (
+				1BA8F9702664CF7200FB4009 /* Sources */,
+				1BA8F9712664CF7200FB4009 /* Frameworks */,
+				1BA8F9722664CF7200FB4009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BakingChat;
+			productName = BakingChat;
+			productReference = 1BA8F9742664CF7200FB4009 /* BakingChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BA8F9892664CF7400FB4009 /* BakingChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA8F9A12664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChatTests" */;
+			buildPhases = (
+				1BA8F9862664CF7400FB4009 /* Sources */,
+				1BA8F9872664CF7400FB4009 /* Frameworks */,
+				1BA8F9882664CF7400FB4009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA8F98C2664CF7400FB4009 /* PBXTargetDependency */,
+			);
+			name = BakingChatTests;
+			productName = BakingChatTests;
+			productReference = 1BA8F98A2664CF7400FB4009 /* BakingChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BA8F9942664CF7400FB4009 /* BakingChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA8F9A42664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChatUITests" */;
+			buildPhases = (
+				1BA8F9912664CF7400FB4009 /* Sources */,
+				1BA8F9922664CF7400FB4009 /* Frameworks */,
+				1BA8F9932664CF7400FB4009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BA8F9972664CF7400FB4009 /* PBXTargetDependency */,
+			);
+			name = BakingChatUITests;
+			productName = BakingChatUITests;
+			productReference = 1BA8F9952664CF7400FB4009 /* BakingChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BA8F96C2664CF7100FB4009 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1BA8F9732664CF7200FB4009 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1BA8F9892664CF7400FB4009 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1BA8F9732664CF7200FB4009;
+					};
+					1BA8F9942664CF7400FB4009 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1BA8F9732664CF7200FB4009;
+					};
+				};
+			};
+			buildConfigurationList = 1BA8F96F2664CF7200FB4009 /* Build configuration list for PBXProject "BakingChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BA8F96B2664CF7100FB4009;
+			productRefGroup = 1BA8F9752664CF7200FB4009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BA8F9732664CF7200FB4009 /* BakingChat */,
+				1BA8F9892664CF7400FB4009 /* BakingChatTests */,
+				1BA8F9942664CF7400FB4009 /* BakingChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BA8F9722664CF7200FB4009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA8F9842664CF7400FB4009 /* LaunchScreen.storyboard in Resources */,
+				1BA8F9812664CF7400FB4009 /* Assets.xcassets in Resources */,
+				1BA8F97F2664CF7200FB4009 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9882664CF7400FB4009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9932664CF7400FB4009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BA8F9702664CF7200FB4009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA8F97C2664CF7200FB4009 /* ViewController.swift in Sources */,
+				1BA8F9782664CF7200FB4009 /* AppDelegate.swift in Sources */,
+				1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9862664CF7400FB4009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA8F98F2664CF7400FB4009 /* BakingChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA8F9912664CF7400FB4009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA8F99A2664CF7400FB4009 /* BakingChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BA8F98C2664CF7400FB4009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA8F9732664CF7200FB4009 /* BakingChat */;
+			targetProxy = 1BA8F98B2664CF7400FB4009 /* PBXContainerItemProxy */;
+		};
+		1BA8F9972664CF7400FB4009 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BA8F9732664CF7200FB4009 /* BakingChat */;
+			targetProxy = 1BA8F9962664CF7400FB4009 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BA8F97D2664CF7200FB4009 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA8F97E2664CF7200FB4009 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BA8F9822664CF7400FB4009 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BA8F9832664CF7400FB4009 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BA8F99C2664CF7400FB4009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BA8F99D2664CF7400FB4009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BA8F99F2664CF7400FB4009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BA8F9A02664CF7400FB4009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BA8F9A22664CF7400FB4009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BakingChat.app/BakingChat";
+			};
+			name = Debug;
+		};
+		1BA8F9A32664CF7400FB4009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BakingChat.app/BakingChat";
+			};
+			name = Release;
+		};
+		1BA8F9A52664CF7400FB4009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BakingChat;
+			};
+			name = Debug;
+		};
+		1BA8F9A62664CF7400FB4009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3ZPWB4HNK;
+				INFOPLIST_FILE = BakingChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BakingChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA8F96F2664CF7200FB4009 /* Build configuration list for PBXProject "BakingChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA8F99C2664CF7400FB4009 /* Debug */,
+				1BA8F99D2664CF7400FB4009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA8F99E2664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA8F99F2664CF7400FB4009 /* Debug */,
+				1BA8F9A02664CF7400FB4009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA8F9A12664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA8F9A22664CF7400FB4009 /* Debug */,
+				1BA8F9A32664CF7400FB4009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BA8F9A42664CF7400FB4009 /* Build configuration list for PBXNativeTarget "BakingChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA8F9A52664CF7400FB4009 /* Debug */,
+				1BA8F9A62664CF7400FB4009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BA8F96C2664CF7100FB4009 /* Project object */;
+}
