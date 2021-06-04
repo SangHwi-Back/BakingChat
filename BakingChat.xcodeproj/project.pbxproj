@@ -17,6 +17,8 @@
 		1B5B6EF2266727A800ABD0BB /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF1266727A800ABD0BB /* MainNavigationViewController.swift */; };
 		1B5B6EF72668670A00ABD0BB /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF62668670A00ABD0BB /* CustomView.swift */; };
 		1B5B6EF92669CED100ABD0BB /* SimpleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF82669CED100ABD0BB /* SimpleAlertViewController.swift */; };
+		1B5B6EFB266A03BB00ABD0BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFA266A03BB00ABD0BB /* README.md */; };
+		1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFC266A044700ABD0BB /* .gitignore */; };
 		1BA8F9782664CF7200FB4009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9772664CF7200FB4009 /* AppDelegate.swift */; };
 		1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */; };
 		1BA8F97C2664CF7200FB4009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F97B2664CF7200FB4009 /* ViewController.swift */; };
@@ -73,6 +75,8 @@
 		1B5B6EF1266727A800ABD0BB /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		1B5B6EF62668670A00ABD0BB /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		1B5B6EF82669CED100ABD0BB /* SimpleAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertViewController.swift; sourceTree = "<group>"; };
+		1B5B6EFA266A03BB00ABD0BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1B5B6EFC266A044700ABD0BB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1BA8F9742664CF7200FB4009 /* BakingChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakingChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA8F9772664CF7200FB4009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				1BA8F9752664CF7200FB4009 /* Products */,
 				3596457B051F3908FBBFEB79 /* Pods */,
 				5324F43B1781136209CD1BD9 /* Frameworks */,
+				1B5B6EFA266A03BB00ABD0BB /* README.md */,
+				1B5B6EFC266A044700ABD0BB /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,7 +406,9 @@
 			files = (
 				1BA8F9842664CF7400FB4009 /* LaunchScreen.storyboard in Resources */,
 				1BA8F9A82664D07B00FB4009 /* GoogleService-Info.plist in Resources */,
+				1B5B6EFB266A03BB00ABD0BB /* README.md in Resources */,
 				1BA8F9812664CF7400FB4009 /* Assets.xcassets in Resources */,
+				1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */,
 				1BA8F97F2664CF7200FB4009 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
