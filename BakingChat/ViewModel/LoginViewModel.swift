@@ -35,7 +35,7 @@ class LoginViewModel {
   func signIn(email: String, pw: String, completion: @escaping (AuthDataResult?) -> Void) {
     Auth.auth().signIn(withEmail: email, password: pw) { (user, error) in
       guard error == nil, let uid = user?.user.uid else {
-        print("Error occured during SIGN UP.")
+        completion(nil)
         return
       }
       

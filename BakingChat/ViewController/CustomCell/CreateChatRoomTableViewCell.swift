@@ -10,6 +10,8 @@ import UIKit
 class CreateChatRoomTableViewCell: UITableViewCell {
   
   @IBOutlet weak var titleLabel: UILabel!
+  var user: User?
+  var delegate: CreateChatRoomDelegate?
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -23,6 +25,8 @@ class CreateChatRoomTableViewCell: UITableViewCell {
   }
   
   @IBAction func deleteButtonTouchUpInside(_ sender: UIButton) {
-    
+    if let uid = user?.uid {
+      delegate?.updateUsers(uid: uid)
+    }
   }
 }

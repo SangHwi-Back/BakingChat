@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CreateChatRoomDelegate {
+  func updateUsers(uid: String)
+}
+
 class CreateChatRoomViewController: UIViewController {
   
   @IBOutlet weak var visualEffectView: UIVisualEffectView!
@@ -40,27 +44,31 @@ class CreateChatRoomViewController: UIViewController {
   }
   
   @IBAction func addChatRoomTouchUpInside(_ sender: UIButton) {
-    if let users = users {
-      VM.saveChatRoom(users, name: nameTextField.text ?? "") { [self] result in
+    
+    guard let users = users, users.count >= 2 else {
+      SimpleConfirmAlertController(title: "채팅방 생성 오류", alertMessage: "참여자 수를 다시 확인해주시기 바랍니다.", sender: self).show()
+      return
+    }
+    
+    VM.saveChatRoom(users, name: nameTextField.text ?? "") { [self] result in
+      
+      if result {
         
-        if result {
-          
-          let alert = UIAlertController(title: nil, message: "등록 완료하였습니다.", preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "확인", style: .default, handler: { _ in
-            if navigationController != nil {
-              navigationController?.popViewController(animated: true)
-            } else {
-              dismiss(animated: true, completion: nil)
-            }
-          }))
-          present(alert, animated: true, completion: nil)
-          
-        } else {
-          
-          let alert = UIAlertController(title: nil, message: "에러가 발생하였습니다.", preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "확인", style: .destructive, handler: nil))
-          present(alert, animated: true, completion: nil)
-        }
+        let alert = UIAlertController(title: nil, message: "등록 완료하였습니다.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "확인", style: .default, handler: { _ in
+          if navigationController != nil {
+            navigationController?.popViewController(animated: true)
+          } else {
+            dismiss(animated: true, completion: nil)
+          }
+        }))
+        present(alert, animated: true, completion: nil)
+        
+      } else {
+        
+        let alert = UIAlertController(title: nil, message: "에러가 발생하였습니다.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "확인", style: .destructive, handler: nil))
+        present(alert, animated: true, completion: nil)
       }
     }
   }
@@ -92,6 +100,7 @@ extension CreateChatRoomViewController: UITableViewDelegate, UITableViewDataSour
     let cell = tableView.dequeueReusableCell(withIdentifier: "CreateChatRoomTableViewCell", for: indexPath) as! CreateChatRoomTableViewCell
     let data = users?[indexPath.row]
     cell.titleLabel.text = data?.username
+    cell.user = data
     
     return cell
   }
@@ -116,5 +125,12 @@ extension CreateChatRoomViewController: UITextFieldDelegate {
     DispatchQueue.main.async { UIView.animate(withDuration: 0.3) {
       self.customViewBottomConstraint.constant = 0
     }}
+  }
+}
+extension CreateChatRoomViewController: CreateChatRoomDelegate {
+  func updateUsers(uid: String) {
+    if let inx = users?.firstIndex(where: {$0.uid == uid}), let _ = users?.remove(at: inx) {
+      tableView.reloadData()
+    }
   }
 }

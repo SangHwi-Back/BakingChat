@@ -94,27 +94,14 @@ class ViewController: UIViewController {
     dismissSelector(nil)
     VM.signIn(email: email, pw: password) { userSignIn in
       
-      var result: LoginResult = .fail
-      
-      if userSignIn != nil {
-        result = .success
-      }
-      
-      let alert = UIAlertController(title: result.rawValue,
-                                    message: (result == .success ? "반갑습니다. \("")" : ""),
-                                    preferredStyle: .alert)
-      alert.addAction(UIAlertAction(title: "닫기",
-                                    style: (result == .success ? .default : .destructive),
-                                    handler: { _ in
-                                      if result == .success {
-                                        DispatchQueue.main.async {
-                                          self.performSegue(withIdentifier: "ChatMainViewController", sender: self)
-                                        }
-                                      }
-                                    }))
-      
-      DispatchQueue.main.async {
-        self.present(alert, animated: true, completion: nil)
+      if userSignIn == nil {
+        SimpleConfirmAlertController(title: "로그인 오류", alertMessage: "Email/ID 혹은 비밀번호를 확인해주시기 바랍니다.", sender: self).show()
+      } else {
+        SimpleConfirmAlertController(title: "로그인 완료", alertMessage: "반갑습니다. \(self.VM.currentUser.username).", sender: self).show() {
+          DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "ChatMainViewController", sender: self)
+          }
+        }
       }
     }
   }

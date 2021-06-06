@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		125739F5379C6D351E7B87D3 /* Pods_BakingChat_BakingChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E1B81F8C7AC4D4720E481 /* Pods_BakingChat_BakingChatUITests.framework */; };
+		1B2A2E6A266C8491002AF0D3 /* SimpleConfirmAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2A2E69266C8491002AF0D3 /* SimpleConfirmAlertController.swift */; };
+		1B2A2E6C266C975B002AF0D3 /* SimpleConfirmAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2A2E6B266C975A002AF0D3 /* SimpleConfirmAlertController.xib */; };
 		1B5B6EE42665F0CC00ABD0BB /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EE32665F0CC00ABD0BB /* ChatRoomTableViewCell.swift */; };
 		1B5B6EE62665F3FF00ABD0BB /* SearchMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EE52665F3FF00ABD0BB /* SearchMemberViewController.swift */; };
 		1B5B6EE82665F43E00ABD0BB /* CreateChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EE72665F43E00ABD0BB /* CreateChatRoomViewController.swift */; };
@@ -16,7 +18,6 @@
 		1B5B6EEE2666FC0200ABD0BB /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EED2666FC0200ABD0BB /* Date+Extension.swift */; };
 		1B5B6EF2266727A800ABD0BB /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF1266727A800ABD0BB /* MainNavigationViewController.swift */; };
 		1B5B6EF72668670A00ABD0BB /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF62668670A00ABD0BB /* CustomView.swift */; };
-		1B5B6EF92669CED100ABD0BB /* SimpleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF82669CED100ABD0BB /* SimpleAlertViewController.swift */; };
 		1B5B6EFB266A03BB00ABD0BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFA266A03BB00ABD0BB /* README.md */; };
 		1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFC266A044700ABD0BB /* .gitignore */; };
 		1BA8F9782664CF7200FB4009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9772664CF7200FB4009 /* AppDelegate.swift */; };
@@ -66,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2A2E69266C8491002AF0D3 /* SimpleConfirmAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleConfirmAlertController.swift; sourceTree = "<group>"; };
+		1B2A2E6B266C975A002AF0D3 /* SimpleConfirmAlertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleConfirmAlertController.xib; sourceTree = "<group>"; };
 		1B5B6EE32665F0CC00ABD0BB /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		1B5B6EE52665F3FF00ABD0BB /* SearchMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMemberViewController.swift; sourceTree = "<group>"; };
 		1B5B6EE72665F43E00ABD0BB /* CreateChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChatRoomViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +77,6 @@
 		1B5B6EED2666FC0200ABD0BB /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1B5B6EF1266727A800ABD0BB /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		1B5B6EF62668670A00ABD0BB /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		1B5B6EF82669CED100ABD0BB /* SimpleAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertViewController.swift; sourceTree = "<group>"; };
 		1B5B6EFA266A03BB00ABD0BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B5B6EFC266A044700ABD0BB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1BA8F9742664CF7200FB4009 /* BakingChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakingChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				1BA8F97D2664CF7200FB4009 /* Main.storyboard */,
+				1B2A2E6B266C975A002AF0D3 /* SimpleConfirmAlertController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,7 +249,7 @@
 				1B5B6EE72665F43E00ABD0BB /* CreateChatRoomViewController.swift */,
 				1BF874E32665B6D900912156 /* ProfileViewController.swift */,
 				1B5B6EF62668670A00ABD0BB /* CustomView.swift */,
-				1B5B6EF82669CED100ABD0BB /* SimpleAlertViewController.swift */,
+				1B2A2E69266C8491002AF0D3 /* SimpleConfirmAlertController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				1BA8F9812664CF7400FB4009 /* Assets.xcassets in Resources */,
 				1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */,
 				1BA8F97F2664CF7200FB4009 /* Main.storyboard in Resources */,
+				1B2A2E6C266C975B002AF0D3 /* SimpleConfirmAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,10 +561,10 @@
 				1BF874DF26659F3700912156 /* ChatMainCollectionViewCell.swift in Sources */,
 				1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */,
 				1BF874D62664E5DE00912156 /* UIView+Extension.swift in Sources */,
+				1B2A2E6A266C8491002AF0D3 /* SimpleConfirmAlertController.swift in Sources */,
 				1BF874D02664DBF300912156 /* User.swift in Sources */,
 				1BF874E42665B6D900912156 /* ProfileViewController.swift in Sources */,
 				1B5B6EF72668670A00ABD0BB /* CustomView.swift in Sources */,
-				1B5B6EF92669CED100ABD0BB /* SimpleAlertViewController.swift in Sources */,
 				1BF874D8266587DC00912156 /* ChatMainViewController.swift in Sources */,
 				1B5B6EE82665F43E00ABD0BB /* CreateChatRoomViewController.swift in Sources */,
 				1BF874E12665B0E700912156 /* ChatMainViewModel.swift in Sources */,
