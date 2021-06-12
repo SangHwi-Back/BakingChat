@@ -28,9 +28,7 @@
 		1BA8F9842664CF7400FB4009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9822664CF7400FB4009 /* LaunchScreen.storyboard */; };
 		1BA8F98F2664CF7400FB4009 /* BakingChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F98E2664CF7400FB4009 /* BakingChatTests.swift */; };
 		1BA8F99A2664CF7400FB4009 /* BakingChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9992664CF7400FB4009 /* BakingChatUITests.swift */; };
-		1BA8F9A82664D07B00FB4009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9A72664D07B00FB4009 /* GoogleService-Info.plist */; };
-		1BA8F9A92664D07B00FB4009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9A72664D07B00FB4009 /* GoogleService-Info.plist */; };
-		1BA8F9AA2664D07B00FB4009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BA8F9A72664D07B00FB4009 /* GoogleService-Info.plist */; };
+		1BDB19392674CAD2004C73AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1BDB19382674CAD2004C73AC /* GoogleService-Info.plist */; };
 		1BF874C52664D7EE00912156 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF874C42664D7EE00912156 /* LoginViewModel.swift */; };
 		1BF874CC2664DB3100912156 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF874CB2664DB3100912156 /* Message.swift */; };
 		1BF874CE2664DB6800912156 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF874CD2664DB6800912156 /* ChatRoom.swift */; };
@@ -93,7 +91,8 @@
 		1BA8F9952664CF7400FB4009 /* BakingChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakingChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA8F9992664CF7400FB4009 /* BakingChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakingChatUITests.swift; sourceTree = "<group>"; };
 		1BA8F99B2664CF7400FB4009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BA8F9A72664D07B00FB4009 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1BBB5A272671BFDE001A1D0E /* BakingChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BakingChat.entitlements; sourceTree = "<group>"; };
+		1BDB19382674CAD2004C73AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BF874C42664D7EE00912156 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1BF874CB2664DB3100912156 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1BF874CD2664DB6800912156 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
@@ -174,6 +173,7 @@
 		1BA8F9762664CF7200FB4009 /* BakingChat */ = {
 			isa = PBXGroup;
 			children = (
+				1BBB5A272671BFDE001A1D0E /* BakingChat.entitlements */,
 				1BF874C72664DADD00912156 /* Supporting */,
 				1BF874C62664DAC800912156 /* Model */,
 				1BF874C82664DAF100912156 /* View */,
@@ -182,7 +182,7 @@
 				1BA8F9802664CF7400FB4009 /* Assets.xcassets */,
 				1BA8F9822664CF7400FB4009 /* LaunchScreen.storyboard */,
 				1BA8F9852664CF7400FB4009 /* Info.plist */,
-				1BA8F9A72664D07B00FB4009 /* GoogleService-Info.plist */,
+				1BDB19382674CAD2004C73AC /* GoogleService-Info.plist */,
 			);
 			path = BakingChat;
 			sourceTree = "<group>";
@@ -408,12 +408,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA8F9842664CF7400FB4009 /* LaunchScreen.storyboard in Resources */,
-				1BA8F9A82664D07B00FB4009 /* GoogleService-Info.plist in Resources */,
 				1B5B6EFB266A03BB00ABD0BB /* README.md in Resources */,
 				1BA8F9812664CF7400FB4009 /* Assets.xcassets in Resources */,
 				1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */,
 				1BA8F97F2664CF7200FB4009 /* Main.storyboard in Resources */,
 				1B2A2E6C266C975B002AF0D3 /* SimpleConfirmAlertController.xib in Resources */,
+				1BDB19392674CAD2004C73AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +421,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA8F9A92664D07B00FB4009 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,7 +428,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA8F9AA2664D07B00FB4009 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,6 +743,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BakingChat/BakingChat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3ZPWB4HNK;
 				INFOPLIST_FILE = BakingChat/Info.plist;
@@ -754,6 +754,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -765,6 +766,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BakingChat/BakingChat.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L3ZPWB4HNK;
 				INFOPLIST_FILE = BakingChat/Info.plist;
@@ -774,6 +777,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanghwiback.BakingChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

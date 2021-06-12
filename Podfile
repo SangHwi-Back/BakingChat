@@ -8,6 +8,7 @@ target 'BakingChat' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
   # Pods for BakingChat
 
   target 'BakingChatTests' do

@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
 
+    let VM = LoginViewModel.instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +28,10 @@ class ProfileViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func logoutButtonTouchUpInside(_ sender: UIButton) {
+        
+        let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: String(describing: ViewController.self))
+        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = UINavigationController(rootViewController: vc)
+        VM.signOut()
+    }
 }
