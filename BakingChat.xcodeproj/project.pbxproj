@@ -20,6 +20,7 @@
 		1B5B6EF72668670A00ABD0BB /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5B6EF62668670A00ABD0BB /* CustomView.swift */; };
 		1B5B6EFB266A03BB00ABD0BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFA266A03BB00ABD0BB /* README.md */; };
 		1B5B6EFD266A044700ABD0BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1B5B6EFC266A044700ABD0BB /* .gitignore */; };
+		1B9B1DA22676CB8400C8A9AE /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9B1DA12676CB8400C8A9AE /* CreateUserViewController.swift */; };
 		1BA8F9782664CF7200FB4009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9772664CF7200FB4009 /* AppDelegate.swift */; };
 		1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */; };
 		1BA8F97C2664CF7200FB4009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA8F97B2664CF7200FB4009 /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		1B5B6EF62668670A00ABD0BB /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		1B5B6EFA266A03BB00ABD0BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B5B6EFC266A044700ABD0BB /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1B9B1DA12676CB8400C8A9AE /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		1BA8F9742664CF7200FB4009 /* BakingChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakingChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA8F9772664CF7200FB4009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BA8F9792664CF7200FB4009 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				1BF874E32665B6D900912156 /* ProfileViewController.swift */,
 				1B5B6EF62668670A00ABD0BB /* CustomView.swift */,
 				1B2A2E69266C8491002AF0D3 /* SimpleConfirmAlertController.swift */,
+				1B9B1DA12676CB8400C8A9AE /* CreateUserViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				1BF874DD26659EAC00912156 /* ChatMainTableViewCell.swift in Sources */,
 				1B5B6EEA2665FB1A00ABD0BB /* SearchMemberTableViewCell.swift in Sources */,
 				1B5B6EF2266727A800ABD0BB /* MainNavigationViewController.swift in Sources */,
+				1B9B1DA22676CB8400C8A9AE /* CreateUserViewController.swift in Sources */,
 				1BF874D22664E55500912156 /* UIButton+Extension.swift in Sources */,
 				1BF874DF26659F3700912156 /* ChatMainCollectionViewCell.swift in Sources */,
 				1BA8F97A2664CF7200FB4009 /* SceneDelegate.swift in Sources */,
@@ -672,7 +676,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -727,7 +731,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

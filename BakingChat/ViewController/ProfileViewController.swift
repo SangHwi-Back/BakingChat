@@ -30,8 +30,14 @@ class ProfileViewController: UIViewController {
     */
     @IBAction func logoutButtonTouchUpInside(_ sender: UIButton) {
         
-        let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: String(describing: ViewController.self))
-        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = UINavigationController(rootViewController: vc)
+        DispatchQueue.main.async {
+            let loginVC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: ViewController.self))
+            let navVC = UINavigationController(rootViewController: loginVC)
+            let appDelegate = UIApplication.shared.delegate as? AppDelegate
+            appDelegate?.window?.rootViewController = navVC
+            appDelegate?.window?.makeKeyAndVisible()
+        }
+        
         VM.signOut()
     }
 }

@@ -23,9 +23,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var logInButton: UIButton!
     
     @IBOutlet var editingViews: [UIView]!
+    
+    @IBOutlet weak var loginViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var loginViewBottomConstraint: NSLayoutConstraint!
+    
     // PROPERTIES
+    private var topConstraint: CGFloat!
+    private var bottomConstraint: CGFloat!
+    
     /** LoginViewModel.swift */
-    let VM = LoginViewModel.instance
+    var VM: LoginViewModel!
     var idSaveChecked: Bool! {
         didSet {
             idSaveButton.isChecked(idSaveChecked)
@@ -40,6 +47,13 @@ class ViewController: UIViewController {
     // VIEW LIFE CYCLE
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        VM = LoginViewModel.instance
+        topConstraint = loginViewTopConstraint.constant
+        bottomConstraint = loginViewBottomConstraint.constant
+        
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissSelector(_:))))
         
         logInButton.activateButton(false)
@@ -97,7 +111,15 @@ class ViewController: UIViewController {
             if userSignIn == nil {
                 SimpleConfirmAlertController(title: "로그인 오류", alertMessage: "Email/ID 혹은 비밀번호를 확인해주시기 바랍니다.", sender: self).show()
             } else {
+                
                 DispatchQueue.main.async {
+                    
+                    let appDelegate = UIApplication.shared.delegate as? AppDelegate
+                    let chatMainVC = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: ChatMainViewController.self))
+                    let navViewController = UINavigationController(rootViewController: chatMainVC)
+                    
+                    appDelegate?.window?.rootViewController = navViewController
+                    
                     SimpleConfirmAlertController(title: "로그인 완료", alertMessage: "반갑습니다. \(self.VM.currentUser.username).", sender: self).show() {
                         DispatchQueue.main.async {
                             self.performSegue(withIdentifier: "ChatMainViewController", sender: self)
@@ -106,6 +128,10 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction func createUserButtonTouchUpInside(_ sender: UIButton) {
+        performSegue(withIdentifier: "CreateUserViewController", sender: sender)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -120,8 +146,10 @@ class ViewController: UIViewController {
 extension ViewController {
     @objc func dismissSelector(_ sender: Any?) {
         self.view.endEditing(true)
-        DispatchQueue.main.async { UIView.animate(withDuration: 0.3) {
-            self.view.frame.origin.y = 0
+        DispatchQueue.main.async { UIView.animate(withDuration: 0.3) { [self] in
+            
+            loginViewTopConstraint.constant = topConstraint
+            loginViewBottomConstraint.constant = bottomConstraint
         }}
     }
     
@@ -129,8 +157,13 @@ extension ViewController {
         if let keyboardFrame: NSValue = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
             let keyboardRectangle = keyboardFrame.cgRectValue
             
-            DispatchQueue.main.async { UIView.animate(withDuration: 0.3) {
-                self.view.frame.origin.y -= keyboardRectangle.height
+            DispatchQueue.main.async { UIView.animate(withDuration: 0.3) { [self] in
+                
+                if loginViewBottomConstraint.constant == bottomConstraint {
+                    
+                    loginViewTopConstraint.constant = 0
+                    loginViewBottomConstraint.constant = keyboardRectangle.height
+                }
             }}
         }
     }
@@ -144,18 +177,10 @@ extension ViewController: UITextFieldDelegate {
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        DispatchQueue.main.async { UIView.animate(withDuration: 0.3) {
-            self.view.frame.origin.y -= AppDelegate.keyboardHeight
-        }}
-        
         return true
     }
     
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        DispatchQueue.main.async { UIView.animate(withDuration: 0.3) {
-            self.view.frame.origin.y = 0
-        }}
-        
         return true
     }
 }

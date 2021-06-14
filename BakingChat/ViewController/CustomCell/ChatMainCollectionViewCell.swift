@@ -18,7 +18,7 @@ class ChatMainCollectionViewCell: UICollectionViewCell {
   }
   
   @IBAction func userNameButtonTouchUpInsdie(_ sender: UIButton) {
-    if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: "ProfileViewController") as? ProfileViewController {
+    if let vc = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "ProfileViewController") as? ProfileViewController {
       
     }
   }

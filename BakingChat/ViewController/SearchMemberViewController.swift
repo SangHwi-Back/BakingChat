@@ -87,7 +87,7 @@ extension SearchMemberViewController: UITableViewDataSource, UITableViewDelegate
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
     if let cell = tableView.cellForRow(at: indexPath) {
-      cell.contentView.backgroundColor = cell.isSelected ? .systemGray5 : .systemBackground
+      cell.contentView.backgroundColor = cell.isSelected ? .lightGray : .white
     }
   }
 }
